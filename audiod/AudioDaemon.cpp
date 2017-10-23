@@ -439,7 +439,7 @@ namespace android {
                 str += ",OFFLINE";
         }
         ALOGV("%s: notifyAudioSystem : %s", __func__, str.string());
-        AudioSystem::setParameters(0, str);
+        //AudioSystem::setParameters(0, str);
     }
 
     void AudioDaemon::notifyAudioSystemEventStatus(const char* event,
@@ -455,6 +455,6 @@ namespace android {
         else
             str += ",OFF";
         ALOGD("%s: notifyAudioSystemEventStatus : %s", __func__, str.string());
-        AudioSystem::setParameters(0, str);
+        //AudioSystem::setParameters(0, str);
     }
 }
